@@ -56,11 +56,11 @@ function App() {
         })
         // Add code here to send the form data to the server, or to process it in some way
     }
-    return ( <
+    return (<
         div >
 
         <
-        Dash / >
+            Dash />
 
 
 
@@ -68,7 +68,7 @@ function App() {
         <
         /div>
 
-    );
+        );
 }
 
-export default App;
+        export default App;
