@@ -39,23 +39,6 @@ function App() {
     const [login, setLogin] = useState(true);
     const [loginTrue, setLoginTrue] = useState(true);
 
-    function handleSubmit(event) {
-
-        event.preventDefault();
-        console.log(email, password)
-        axios.post("https://shoetlld.store/loginuser", {
-            email,
-            password
-        }).then((res) => {
-            console.log(res)
-            if (res.data.message) {
-                sessionStorage.setItem("auth", "ok")
-                setReShort(true)
-                setLogin(false)
-            }
-        })
-        // Add code here to send the form data to the server, or to process it in some way
-    }
     return (<
         div >
 
